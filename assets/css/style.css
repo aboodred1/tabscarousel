@@ -1,0 +1,346 @@
+
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: yellow;
+}
+
+.container {
+	background-color: orange;
+	width: 980px;
+	padding-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	box-sizing: border-box;
+
+	position: relative;
+}
+
+.tabs {
+	float: none;
+	clear: both;
+	overflow: hidden;
+	zoom: 1;
+	width: 100%;
+}
+
+.tab-nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	zoom: 1;
+	position: relative; top: 1px;
+	border-bottom: 1px solid green;
+}
+
+.tab-nav li {
+	float: left;
+	display: block;
+	padding-right: 10px;
+}
+
+.tab-nav li:last-child {
+	padding-right: 0;
+}
+
+.tab-nav li a {
+	background-color: grey;
+	color: #fff;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 10px 10px 0 0;
+}
+
+.tab-nav li a:hover {
+	background-color: #ccc;
+	color: #333;
+}
+
+.tab-nav li.tab-link-active a {
+	background-color: blue;
+}
+
+.tab-nav li.tab-link-active a:hover {
+	background-color: lightblue;
+}
+
+.tab-content .tab {
+	display: none;
+	padding: 20px;
+	background-color: green;
+	color: #ddd;
+}
+
+.tab-content .tab-title {
+	display: none;
+	background-color: silver;
+	margin: 0;
+	padding: 10px 20px;
+	border-bottom: 1px solid #000;
+	position: relative;
+	cursor: pointer;
+}
+
+.tab-content .tab-title .fa {
+	position: absolute;
+	top: 35%;
+	right: 20px;
+
+}
+
+/********************************/
+
+.carousel {
+	background-color: brown;
+}
+
+.carousel-container {
+	width: 100%;
+	overflow: hidden;
+	zoom: 1;
+	
+}
+
+.carousel-wrapper {
+	width: 4000em;
+	background-color: purple;
+	position: relative;
+
+}
+.carousel-wrapper:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.carousel-item {
+	border: 1px solid #ccc;
+	width: 220px;
+	float: left;
+	margin-right: 20px;
+	box-sizing: border-box;
+	position: relative;
+}
+.carousel-item:last-child {
+	margin-right: 0;
+}
+
+.carousel-item .carousel-title {
+	margin: 0;
+	padding: 5px;
+	background-color: #666;
+	text-align: center;
+}
+
+.carousel-item .carousel-button {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+
+.carousel-item img {
+	width: 100%;
+	display: block;
+	height: 175px;
+}
+
+.carousel-nav {
+	background-color: lightpink;
+	padding: 20px;
+	position: relative;
+}
+
+.carousel-nav .carousel-nav-dir {
+	position: absolute;
+	top: 35%;
+}
+
+.carousel-nav .carousel-nav-prev {
+	left: 10px;
+}
+
+.carousel-nav .carousel-nav-next {
+	right: 10px;
+}
+
+.carousel-nav-pagination {
+	text-align: center;
+}
+
+/********************************/
+
+.owl-carousel {
+	position: relative;
+	width: 100%;
+}
+
+.owl-carousel .owl-wrapper-outer {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.owl-carousel .owl-wrapper, .owl-carousel .owl-item {
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-webkit-transform: translate3d(0,0,0);
+	-moz-transform: translate3d(0,0,0);
+	-ms-transform: translate3d(0,0,0);
+}
+
+.owl-carousel .owl-wrapper {
+	position: relative;
+	background-color: purple;
+
+}
+.owl-carousel .owl-wrapper:after {
+	display: block;
+	clear: both;
+	content: '';
+}
+
+.owl-carousel .owl-item {
+	float: left;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.owl-carousel .owl-item .item {
+	border: 1px solid #ccc;
+	position: relative;
+}
+
+.owl-carousel .owl-item .item-title {
+	background-color: #666;
+	color: #eee;
+	margin: 0;
+	padding: 10px;
+}
+
+.owl-carousel .owl-item .item-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -25px;
+	margin-left: -25px;
+	display: block;
+	width: 50px;
+	height: 50px;
+	background-color: cyan;
+	text-indent: -3000em;
+	cursor: pointer;
+	opacity: 0.6;
+
+}
+
+.owl-carousel .owl-item img {
+	width: 100%;
+	display: block;
+	height: 175px;
+}
+
+.owl-carousel .owl-controls {
+	text-align: center;
+	position: relative;
+	background-color: lightpink;
+	color: #333;
+	padding: 20px 0;
+}
+
+.owl-carousel .owl-pagination {
+
+}
+
+.owl-carousel .owl-page {
+	display: inline-block;
+	cursor: pointer;
+	padding-right: 10px;
+	font-size: 14px;
+}
+
+.owl-carousel .owl-page span {
+	display: block;
+	background-color: #869791;
+	border-radius: 20px;
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	color: #000;
+}
+
+.owl-carousel .owl-page.active span {
+	background-color: #333;
+	color: #ddd;
+}
+
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+	position: absolute;
+	display: block;
+	background-color: #666;
+	color: #ddd;
+	top: 35%;
+	padding: 5px 20px;
+	cursor: pointer;
+}
+
+.owl-carousel .owl-prev:hover,
+.owl-carousel .owl-next:hover {
+	background-color: #ccc;
+	color: #333;
+}
+
+.owl-carousel .owl-prev {
+	
+	left: 10px;
+
+}
+.owl-carousel .owl-next {
+	right: 10px;
+}
+
+
+@media only screen and (max-width: 980px) {
+    .container {
+        background-color: maroon;
+        width: 100%;
+    }
+
+    .tab-nav {
+    	display: none;
+    }
+
+    .tab-content .tab-title {
+    	display: block;
+    }
+
+	.owl-carousel .owl-page {
+		padding-right: 8px;
+		font-size: 10px;
+		margin-bottom: 10px;
+	}
+
+	.owl-carousel .owl-page span {
+		width: 20px;
+		height: 20px;
+		line-height: 20px;
+	}
+
+	.owl-carousel .owl-prev,
+	.owl-carousel .owl-next {
+		position: static;
+		display: inline-block;
+		margin-right: 10px;
+
+	}
+
+}
